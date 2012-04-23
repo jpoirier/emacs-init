@@ -1,4 +1,21 @@
-emacs-init
-==========
+This emacs folder sits in my Dropbox (OSX & Windows) and I have the following in my .emacs file:
 
-my emacs stuff
+(add-to-list 'load-path "~/Dropbox/emacs")
+(load "init")
+
+init.el
+-------
+- does add-to-list and load-path for stuff in the vendor folder
+- loads stuff from the user folder
+
+user folder
+-----------
+- contains system specific initialization files, e.g. bindings.el, require.el, global.el, env.el
+- contains files for setting/configuring items in the vendor folder 
+
+vendor folder
+-------------
+- some add-on functionality
+
+
+I don't have Dropbox running on all the machines I work on, e.g. lab computers at work, so I keep a copy on Github for easy access.
