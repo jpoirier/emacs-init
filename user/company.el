@@ -1,6 +1,5 @@
 ;;; http://nschum.de/src/emacs/company-mode/
 (setq company-backends '(company-elisp 
-                         company-ropemacs
                          company-gtags
                          company-dabbrev-code
                          company-keywords

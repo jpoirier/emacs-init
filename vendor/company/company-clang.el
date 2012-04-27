@@ -166,7 +166,7 @@ Prefix files (-include ...) can be selected with
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defconst company-clang-required-version "1.1")
+(defconst company-clang-required-version "3.0")
 
 (defsubst company-clang-version ()
   "Return the version of `company-clang-executable'."
@@ -206,9 +206,10 @@ Completions only work correctly when the buffer has been saved.
         ('interactive (company-begin-backend 'company-clang))
         ('init (unless company-clang-executable
                  (error "Company found no clang executable"))
-               (when (version< (company-clang-version)
-                               company-clang-required-version)
-                 (error "Company requires clang version 1.1")))
+ ;              (when (version< (company-clang-version)
+ ;                              company-clang-required-version)
+;                 (error "Company requires clang version 1.1"))
+)
         ('prefix (and (memq major-mode company-clang-modes)
                       buffer-file-name
                       company-clang-executable

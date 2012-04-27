@@ -12,12 +12,13 @@
 ;(setq debug-on-error t)
 
 (if (eq system-type 'windows-nt)
-        (setq path-string-vendor "C:/Users/jpoirier/Dropbox/emacs-init/vendor")
-    (setq path-string-vendor "~/Dropbox/emacs-init/vendor"))
+        (setq path-string-vendor "C:/Users/jpoirier/Google Drive/emacs-init/vendor")
+    (setq path-string-vendor "~/Google Drive/emacs-init/vendor"))
 
 (add-to-list 'load-path (concat path-string-vendor "/ace-jump-mode"))
 (add-to-list 'load-path (concat path-string-vendor "/ack-and-a-half"))
 (add-to-list 'load-path (concat path-string-vendor "/auto-complete"))
+(add-to-list 'load-path (concat path-string-vendor "/clang-completion-mode"))
 ;(add-to-list 'load-path (concat path-string-vendor "/auto-indent-mode"))
 ;(add-to-list 'load-path (concat path-string-vendor "/color-theme-solarized"))
 (add-to-list 'load-path (concat path-string-vendor "/color-theme"))
