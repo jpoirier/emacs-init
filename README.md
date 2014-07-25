@@ -1,7 +1,8 @@
-This emacs folder sits in my Dropbox (OSX & Windows) and I have the following in my .emacs file:
+This emacs folder sits in my AeroFS folder (Linux/OSX/Windows) with the
+following in my .emacs file:
 
-(add-to-list 'load-path "~/Dropbox/emacs")
-(load "init")
+- (add-to-list 'load-path “~/AeroFS/emacs-init")
+- (load "init")
 
 init.el
 -------
@@ -11,7 +12,7 @@ init.el
 user folder
 -----------
 - contains system specific initialization files, e.g. bindings.el, require.el, global.el, env.el
-- contains files for setting/configuring items in the vendor folder 
+- contains files for setting/configuring items in the vendor folder
 
 vendor folder
 -------------

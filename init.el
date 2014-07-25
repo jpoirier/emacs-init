@@ -1,6 +1,6 @@
-;; init.el should be loded from .emacs file.
+;; init.el should be loaded from .emacs file.
 ;; Note, vendor load paths are OS specific.
-;; User loads happen last and in 3 stages. 
+;; User loads happen last and in 3 stages.
 
 ;; M-x set-variable
 ;; debug-on-error
@@ -8,20 +8,24 @@
 ;; M-x load-file
 ;; ~/.emacs
 
+;(setenv "ERGOEMACS_KEYBOARD_LAYOUT" "us") ; US
+
 ;; Enable a backtrace when problems occur
-;(setq debug-on-error t)
+(setq debug-on-error t)
 
 (if (eq system-type 'windows-nt)
-        (setq path-string-vendor "C:/Users/jpoirier/Google Drive/emacs-init/vendor")
-    (setq path-string-vendor "~/Google Drive/emacs-init/vendor"))
+        (setq path-string-vendor "C:/Users/jpoirier/AeroFS/emacs-init/vendor")
+    (setq path-string-vendor "~/AeroFS/emacs-init/vendor"))
 
+;(add-to-list 'load-path (concat path-string-vendor "/ergoemacs-mode"))
+;(add-to-list 'load-path (concat path-string-vendor "/ergoemacs/site-lisp"))
 (add-to-list 'load-path (concat path-string-vendor "/ace-jump-mode"))
 (add-to-list 'load-path (concat path-string-vendor "/ack-and-a-half"))
 (add-to-list 'load-path (concat path-string-vendor "/auto-complete"))
 (add-to-list 'load-path (concat path-string-vendor "/clang-completion-mode"))
 ;(add-to-list 'load-path (concat path-string-vendor "/auto-indent-mode"))
 ;(add-to-list 'load-path (concat path-string-vendor "/color-theme-solarized"))
-(add-to-list 'load-path (concat path-string-vendor "/color-theme"))
+(add-to-list `load-path (concat path-string-vendor "/color-theme"))
 (add-to-list 'load-path (concat path-string-vendor "/company"))
 (add-to-list 'load-path (concat path-string-vendor "/expand-region"))
 (add-to-list 'load-path (concat path-string-vendor "/go-mode"))
@@ -44,7 +48,7 @@
 (load "user/require")
 (load "user/defuncs")
 (load "user/color-theme")
-;(load "user/color-theme-solarized")
+;;(load "user/color-theme-solarized")
 (load "user/global")
 ;(load "user/workgroups")
 (load "user/revive-mode")
@@ -83,3 +87,5 @@
 (load "user/expand-region")
 ;(load "user/auto-indent-mode")
 ;(load "user/layout-restore")
+;(load "user/ergoemacs-mode")
+

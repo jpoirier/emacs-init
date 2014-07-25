@@ -28,7 +28,7 @@
 
 ;; Load CEDET.
 ;; See cedet/common/cedet.info for configuration details.
-;(load-file "~/Dropbox/emacs/cedet/common/cedet.el")
+;(load-file "~/Copy/emacs/cedet/common/cedet.el")
 
 ;(eval-when-compile (require 'cl))
 ; (defun toggle-transparency ()

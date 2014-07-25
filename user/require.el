@@ -1,4 +1,4 @@
-;;; require statements 
+;;; require statements
 
 ;(require 'pastels-on-dark-theme)
 (require 'color-theme)
