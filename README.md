@@ -4,7 +4,7 @@ following in my .emacs file:
 .emacs
 ------
 ```
-(add-to-list 'load-path “~/AeroFS/emacs-init")
+(add-to-list 'load-path "~/AeroFS/emacs-init")
 (load "init")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
